@@ -40,7 +40,6 @@ def where(f, col):
 
 data = [1, 2, 3, 5, 8, 15, 23, 38]
 res = map(int, data)                   
-print(res)
 res = where(lambda x: x % 2 == 0, res)
 print(res)                                # [2, 8, 38]
 res = list(map(lambda x: (x, x**2), res))
